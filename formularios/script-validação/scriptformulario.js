@@ -1,10 +1,10 @@
 function validar() {
-    var nome = document.getElementById("nome").value;
-    var sobrenome = document.getElementById("sobrenome").value;
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;
-    var confirmarsenha = document.getElementById("confirmarsennha").value;
-    if (nome.length < 3){
+    var nome = document.getElementById("nome").value.trim();
+    var sobrenome = document.getElementById("sobrenome").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var senha = document.getElementById("senha").value.trim();
+    var confirmarsenha = document.getElementById("confirmarsennha").value.trim();
+    if (nome.length < 3 || nome == ""){
         document.getElementById('enome').innerHTML = `<p>ERRO! Nome inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
     }
@@ -27,20 +27,20 @@ function validar() {
     document.getElementById("cadastro").style.height = "870px"
 }
 function validarempresa() {
-    var nome = document.getElementById("nome").value;
-    var cnpj = document.getElementById("cnpj").value;
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;
+    var nome = document.getElementById("nome").value.trim();
+    var cnpj = document.getElementById("cnpj").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var senha = document.getElementById("senha").value.trim();
     var confirmarsenha = document.getElementById("confirmarsenha").value;
-    if (nome == "" || nome.length == 0){
+    if (nome == ""){
         document.getElementById('enome').innerHTML = `<p>ERRO! Nome da empresa inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
     }
-    if (cnpj == "" || cnpj.length == 0){
+    if (cnpj == "" || cnpj.length < 14 || cnpj.length > 14){
         document.getElementById('ecnpj').innerHTML = `<p>ERRO! CNPJ inválido</p>`
         document.getElementById("cnpj").style.border = "solid 1px red"
     }
-    if (email == ""|| email.length == 0){
+    if (email == ""){
         document.getElementById('eemail').innerHTML = `<p>ERRO! E-mail inválido</p>`
         document.getElementById("email").style.border = "solid 1px red"
     }
