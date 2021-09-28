@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+:root {
+    --cor01: #0A3FF8;
+    --cor02: #0ac4c0;
+    --cor03: #0B97DE;
+    --cor04: #0B28DE;
+    --cor05: #00EBBA;
+
+    --fontetitulo: 'Roboto', sans-serif;
+    --fonte02: 'Titillium Web', sans-serif;
+   
+}
+
+body {
+    background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
+    font-family: 'Roboto', sans-serif;
+}
+#telaformulario {
+    padding: 8px;
+}
+#login {
+    height: 498px;
+    width: 341px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+}
+
+#logo {
+    height: 100px;
+    width: 200px;
+    margin-left: 40px;
+}
+img {
+    width: 250px;
+    height: 150px;
+}
+#cadastro {
+    background-color: rgba(255, 255, 255, 0.973);
+    margin: auto;
+    border-radius: 20px;
+    height: 740px;
+    width: 341px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+  
+}
+button {
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
+}
+input {
+    border: solid 1px #CCC;
+    width: 285px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+p {
+    margin-top: 10px;
+
+}
+#link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+button:hover {
+    background-color: #35cfae;
+    cursor: pointer;
+    
+}
+a {
+    color: var(--cor03);
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+#txttitulo {
+    color: var(--cor04);
+    text-align: left;
+    margin-left: 26px;
+    font-size: 20px;
+}
+#textinfo {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 14px;
+}
+#devider {
+    border-top: 2px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+}
+#termouso {
+    width: 20px;
+    height: 14px;
+}
+.txterro {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 2em;
+    color: rgb(204, 0, 0);
+}

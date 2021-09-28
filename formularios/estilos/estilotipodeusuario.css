@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+:root {
+    --cor01: #0A3FF8;
+    --cor02: #0ac4c0;
+    --cor03: #0B97DE;
+    --cor04: #0B28DE;
+    --cor05: #00EBBA;
+
+    --fontetitulo: 'Roboto', sans-serif;
+    --fonte02: 'Titillium Web', sans-serif;
+   
+}
+
+body {
+    background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
+    font-family: 'Roboto', sans-serif;
+}
+#tipodeusuario {
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+
+}
+#botaoempresa {
+    margin-left: 10px;
+}
+button {
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
+}
+button:hover {
+    background-color: #35cfae;
+    cursor: pointer;
+    
+}
+#devider {
+    border-top: 2px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 5px 0px;
+    position: relative;
+    text-align: center;
+}
+img {
+    height: 150px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+#logo{
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
