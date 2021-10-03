@@ -1,3 +1,14 @@
+function mostrarsenha(){
+    var senha = document.getElementById("senha")
+    var confirmarsenha = document.getElementById("confirmarsenha")
+    if(senha.getAttribute("type") == "password") {
+        senha.setAttribute("type", "text");
+        confirmarsenha.setAttribute("type", "text");
+    }else {
+        senha.setAttribute("type", "password");
+        confirmarsenha.setAttribute("type", "password");
+    }
+}
 function validar() {
     var nome = document.getElementById("nome").value.trim();
     var sobrenome = document.getElementById("sobrenome").value.trim();
@@ -53,5 +64,19 @@ function validarempresa() {
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
     }
     document.getElementById("cadastro").style.height = "870px"
+
+}
+function validarlogin() {
+    var email = document.getElementById("email").value.trim();
+    var senha = document.getElementById("senha").value.trim();
+    if (email == ""){
+        document.getElementById('eemail').innerHTML = `<p>ERRO! E-mail inválido</p>`
+        document.getElementById("email").style.border = "solid 1px red"
+    }
+    if (senha == ""){
+        document.getElementById('esenha').innerHTML = `<p>ERRO! Senha inválida</p>`
+        document.getElementById("senha").style.border = "solid 1px red"
+    }
+    document.getElementById("telalogin").style.height = "580px"
 
 }

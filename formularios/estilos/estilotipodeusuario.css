@@ -18,7 +18,7 @@ body {
     background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
     font-family: 'Roboto', sans-serif;
 }
-#tipodeusuario {
+.tipodeusuario {
     height: 300px;
     width: 450px;
     margin: auto;
@@ -29,7 +29,7 @@ body {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
 
 }
-#botaoempresa {
+.botaoempresa {
     margin-left: 10px;
 }
 button {
@@ -49,7 +49,7 @@ button:hover {
     cursor: pointer;
     
 }
-#devider {
+.devider {
     border-top: 2px solid #d9dadc;
     display: block;
     line-height: 1px;
@@ -63,7 +63,7 @@ img {
     margin: 0px;
     padding: 0px;
 }
-#logo{
+.logo{
     margin: 0px;
 }
 a {

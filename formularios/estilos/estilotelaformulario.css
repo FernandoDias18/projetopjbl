@@ -18,11 +18,11 @@ body {
     background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
     font-family: 'Roboto', sans-serif;
 }
-#telaformulario {
+.telaformulario {
     padding: 8px;
 }
-#login {
-    height: 498px;
+.login {
+    height: 530px;
     width: 341px;
     margin: auto;
     text-align: center;
@@ -31,7 +31,7 @@ body {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
 }
 
-#logo {
+.logo {
     height: 100px;
     width: 200px;
     margin-left: 40px;
@@ -40,11 +40,11 @@ img {
     width: 250px;
     height: 150px;
 }
-#cadastro {
+.cadastro {
     background-color: rgba(255, 255, 255, 0.973);
     margin: auto;
     border-radius: 20px;
-    height: 740px;
+    height: 780px;
     width: 341px;
     text-align: center;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
@@ -73,7 +73,7 @@ p {
     margin-top: 10px;
 
 }
-#link {
+.link {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
@@ -92,18 +92,18 @@ a {
 a:hover {
     text-decoration: underline;
 }
-#txttitulo {
+.txttitulo {
     color: var(--cor04);
     text-align: left;
     margin-left: 26px;
     font-size: 20px;
 }
-#textinfo {
+.textinfo {
     text-align: left;
     margin-left: 2em;
     font-size: 14px;
 }
-#devider {
+.devider {
     border-top: 2px solid #d9dadc;
     display: block;
     line-height: 1px;
@@ -111,7 +111,7 @@ a:hover {
     position: relative;
     text-align: center;
 }
-#termouso {
+.checkbox {
     width: 20px;
     height: 14px;
 }

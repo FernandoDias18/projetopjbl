@@ -10,32 +10,33 @@
     
 </head>
 <body>
-    <div id="telaformulario">
-        <div id="cadastro">
+    <div class="telaformulario">
+        <div class="cadastro">
             <form action="#">
-                <p id="logo"><img src="../imagens/logosite.png" alt=""></p>
-                <p id="devider"></p>
-                <p id="txttitulo">CADASTRE-SE GRÁTIS</p>
-                <p id="textinfo">NOME DA EMPRESA</p>
+                <p class="logo"><img src="../imagens/logosite.png" alt=""></p>
+                <p class="devider"></p>
+                <p class="txttitulo">CADASTRE-SE GRÁTIS</p>
+                <p class="textinfo">NOME DA EMPRESA</p>
                 <p><input type="text" placeholder="NOME" id="nome"></p>
                 <p class="txterro" id="enome"></p>
-                <p id="textinfo">CNPJ</p>
+                <p class="textinfo">CNPJ</p>
                 <p><input type="text" placeholder="CNPJ" id="cnpj"></p>
                 <p class="txterro" id="ecnpj"></p>
-                <p id="textinfo">E-MAIL</p>
+                <p class="textinfo">E-MAIL</p>
                 <p><input type="text" placeholder="E-MAIL" id="email"></p>
                 <p class="txterro" id="eemail"></p>
-                <p id="textinfo">SENHA</p>
+                <p class="textinfo">SENHA</p>
                 <p><input type="password" placeholder="SENHA" id="senha"></p>
                 <p class="txterro" id="esenha"></p>
-                <p id="textinfo">CONFIRMAR SENHA</p>
+                <p class="textinfo">CONFIRMAR SENHA</p>
                 <p><input type="password" placeholder="CONFIRMAR SENHA" id="confirmarsenha"></p>
                 <p class="txterro" id="econfirmarsenha"></p>
-                <p><input type="checkbox" name="termouso" id="termouso">Concorda com os <a href="#">termos de uso</a></p>
+                <p class="textinfo"><input type="checkbox" name="versenha" class="checkbox" onclick="mostrarsenha()">Mostrar Senha</p>
+                <p class="textinfo"><input type="checkbox" name="termouso" class="checkbox">Concorda com os <a href="#">termos de uso</a></p>
                 <button onclick="validarempresa()">CADASTRAR</button>
             </form>   
         </div>
     </div>
-    <script src="scriptformulario.js"></script>
+    <script src="../script-validação/scriptformulario.js"></script>
 </body>
 </html>
