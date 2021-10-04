@@ -9,13 +9,13 @@ function mostrarsenha(){
         confirmarsenha.setAttribute("type", "password");
     }
 }
-function validar() {
+function validar(){
     var nome = document.getElementById("nome").value.trim();
     var sobrenome = document.getElementById("sobrenome").value.trim();
     var email = document.getElementById("email").value.trim();
     var senha = document.getElementById("senha").value.trim();
     var confirmarsenha = document.getElementById("confirmarsennha").value.trim();
-    if (nome.length < 3 || nome == ""){
+    if (nome.length < 3){
         document.getElementById('enome').innerHTML = `<p>ERRO! Nome inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
     }
@@ -35,7 +35,7 @@ function validar() {
         document.getElementById('econfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
     }
-    document.getElementById("cadastro").style.height = "870px"
+    document.getElementById("tela-cadastro").style.height = "870px"
 }
 function validarempresa() {
     var nome = document.getElementById("nome").value.trim();
@@ -63,7 +63,7 @@ function validarempresa() {
         document.getElementById('econfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
     }
-    document.getElementById("cadastro").style.height = "870px"
+    document.getElementById("tela-empresa").style.height = "890px"
 
 }
 function validarlogin() {
@@ -77,6 +77,6 @@ function validarlogin() {
         document.getElementById('esenha').innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
     }
-    document.getElementById("telalogin").style.height = "580px"
+    document.getElementById("tela-login").style.height = "580px"
 
 }
