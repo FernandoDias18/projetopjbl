@@ -78,5 +78,4 @@ function validarlogin() {
         document.getElementById("senha").style.border = "solid 1px red"
     }
     document.getElementById("tela-login").style.height = "580px"
-
 }
