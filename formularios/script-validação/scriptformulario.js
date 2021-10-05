@@ -12,10 +12,10 @@ function mostrarsenha(){
 function validar(){
     var nome = document.getElementById("nome").value.trim();
     var sobrenome = document.getElementById("sobrenome").value.trim();
-    var email = document.getElementById("email").value.trim();
+    var email= document.getElementById("email").value.trim();
     var senha = document.getElementById("senha").value.trim();
-    var confirmarsenha = document.getElementById("confirmarsennha").value.trim();
-    if (nome.length < 3){
+    var confirmarsenha = document.getElementById("confirmarsenha").value.trim();
+    if (nome.length < 3 || nome == ""){
         document.getElementById('enome').innerHTML = `<p>ERRO! Nome inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
     }
