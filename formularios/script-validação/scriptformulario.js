@@ -42,7 +42,8 @@ function validarempresa() {
     var cnpj = document.getElementById("cnpj").value.trim();
     var email = document.getElementById("email").value.trim();
     var senha = document.getElementById("senha").value.trim();
-    var confirmarsenha = document.getElementById("confirmarsenha").value;
+    var confirmarsenha = document.getElementById("confirmarsenha").value.trim();
+    var termouso = document.getElementById("termouso");
     if (nome == ""){
         document.getElementById('enome').innerHTML = `<p>ERRO! Nome da empresa inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
@@ -63,7 +64,11 @@ function validarempresa() {
         document.getElementById('econfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
     }
+    if (termouso.checked) {
+        document.getElementById('etermouso').innerHTML = `<p>ERRO! Senhas diferentes</p>`
+    }
     document.getElementById("tela-empresa").style.height = "890px"
+    
 
 }
 function validarlogin() {
