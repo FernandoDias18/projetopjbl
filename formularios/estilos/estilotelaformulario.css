@@ -30,6 +30,15 @@ body {
     border-radius: 20px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
 }
+#cadastro-professor {
+    background-color: rgba(255, 255, 255, 0.973);
+    margin: auto;
+    border-radius: 20px;
+    height: 860px;
+    width: 341px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+}
 
 .logo {
     height: 100px;
@@ -48,7 +57,7 @@ img {
     width: 341px;
     text-align: center;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
-  
+
 }
 button {
     background-color: var(--cor05);
@@ -120,4 +129,7 @@ a:hover {
     text-align: left;
     margin-left: 2em;
     color: rgb(204, 0, 0);
+}
+#errotermouso {
+    margin-left: 3em;
 }
