@@ -127,3 +127,22 @@ function validarlogin() {
     }
     document.getElementById("tela-login").style.height = "580px"
 }
+function validarsenhanova(){
+    var email = document.getElementById("email").value.trim();
+    var senha = document.getElementById("senha").value.trim();
+    var confirmarsenha = document.getElementById("confirmarsenha").value.trim();
+    document.getElementById("tela-recuperarsenha").style.height = "625px"
+
+    if (email == ""){
+        document.getElementById("erroemail").innerHTML = `<p>ERRO! E-mail inválido</p>`
+        document.getElementById("email").style.border = "solid 1px red"
+    }
+    if (senha == "" || senha.length < 5){
+        document.getElementById("errosenha").innerHTML = `<p>ERRO! Senha inválida</p>`
+        document.getElementById("senha").style.border = "solid 1px red"
+    }
+    if (confirmarsenha != senha){
+        document.getElementById("erroconfirmarsenha").innerHTML = `<p>ERRO! Senhas diferentes</p>`
+        document.getElementById("confirmarsenha").style.border = "solid 1px red"
+    }
+}
