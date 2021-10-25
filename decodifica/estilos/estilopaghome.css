@@ -86,7 +86,7 @@ main {
     padding-left: 5px;
     justify-content: center;
     margin-top: 30px;
-    background-color: #e0e0e0c0;
+    background-color: #69befaa8;
     margin-left: 10px;
     height: 200px;
     border-radius: 50px;
@@ -136,8 +136,9 @@ h1 {
     width: 50%;
     margin: auto;
 }
-.iconeslinguagens > h1 > span {
+.iconeslinguagens > h1 > span, main> p > span{
     color: #0A3FF8;
+    font-weight: bold;
 }
 strong{
     color: #37f16f;
@@ -211,6 +212,9 @@ div > span > img {
     margin-right: 500px;
     border-radius: 50px;
     margin-left: 20px;
+}
+#separador{
+    color: black;
 }
 .titulocard{
     font-size: 20px;
