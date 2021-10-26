@@ -169,6 +169,3 @@ input {
 #iconerronome, #iconerrosobren, #iconerroemail,#iconerrosenha, #iconerroconfsenha, #iconerrograduacao, #iconerrocnpj{
     display: none;
 }
-.form{
-    display: flex;
-}
