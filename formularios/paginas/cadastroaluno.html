@@ -7,7 +7,7 @@
     <title>Cadastrar-se - Decodifica</title>
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/estilotelaformulario.css">
-    <script src="../script/scriptformulario.js"></script>
+    <link rel="stylesheet" href="../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
 </head>
 <body>
     <div class="telaformulario">
@@ -16,19 +16,39 @@
             <p class="devider"></p>
             <p class="txttitulo">CADASTRE-SE GRÁTIS</p>
             <p class="textinfo">NOME</p>
-            <p><input type="text" placeholder="NOME" id="nome"></p>
+            <div class="form-input">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="NOME" id="nome">
+                <i class="fas fa-times-circle"  id="iconerronome"></i>
+            </div>
             <p class="txterro" id="erronome"></p>
             <p class="textinfo">SOBRENOME</p>
-            <p><input type="text" placeholder="SOBRENOME" id="sobrenome"></p>
+            <div class="form-input">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="SOBRENOME" id="sobrenome">
+                <i class="fas fa-times-circle" id="iconerrosobren"></i>
+            </div>
             <p class="txterro" id="errosobrenome"></p>
             <p class="textinfo">E-MAIL</p>
-            <p><input type="email" placeholder="E-MAIL" id="email"></p>
+            <div class="form-input">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="E-MAIL" id="email">
+                <i class="fas fa-times-circle" id="iconerroemail"></i>
+            </div>
             <p class="txterro" id="erroemail"></p>
             <p class="textinfo">SENHA</p>
-            <p><input type="password" placeholder="SENHA" id="senha"></p>
+            <div class="form-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="SENHA" id="senha">
+                <i class="fas fa-times-circle" id="iconerrosenha"></i>
+            </div>
             <p class="txterro" id="errosenha"></p>
             <p class="textinfo">CONFIRMAR SENHA</p>
-            <p><input type="password" placeholder="CONFIRMAR SENHA" id="confirmarsenha"></p>
+            <div class="form-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="CONFIRMAR SENHA" id="confirmarsenha">
+                <i class="fas fa-times-circle" id="iconerroconfsenha"></i>
+            </div>
             <p class="txterro" id="erroconfirmarsenha"></p>
             <p class="textinfo"><input type="checkbox" name="versenha" class="checkbox" onclick="mostrarsenha()">Mostrar Senha</p>
             <p class="textinfo"><input type="checkbox" name="termouso" id="termouso" class="checkbox">Concorda com os <a href="#">termos de uso</a></p>
@@ -36,5 +56,6 @@
             <button onclick="validaraluno()">CADASTRAR</button>  
         </div>
     </div>
+<script src="../script-validação/scriptformulario.js"></script>
 </body>
 </html>

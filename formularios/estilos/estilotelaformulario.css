@@ -22,7 +22,7 @@ body {
     padding: 8px;
 }
 .login {
-    height: 530px;
+    height: 570px;
     width: 341px;
     margin: auto;
     text-align: center;
@@ -34,13 +34,13 @@ body {
     background-color: rgba(255, 255, 255, 0.973);
     margin: auto;
     border-radius: 20px;
-    height: 860px;
+    height: 970px;
     width: 341px;
     text-align: center;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
 }
 .recuperarsenha{
-    height: 560px;
+    height: 610px;
     width: 341px;
     margin: auto;
     text-align: center;
@@ -62,7 +62,16 @@ img {
     background-color: rgba(255, 255, 255, 0.973);
     margin: auto;
     border-radius: 20px;
-    height: 780px;
+    height: 870px;
+    width: 341px;
+    text-align: center;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+}
+.cadastro-empresa{
+    background-color: rgba(255, 255, 255, 0.973);
+    margin: auto;
+    border-radius: 20px;
+    height: 970px;
     width: 341px;
     text-align: center;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
@@ -79,13 +88,6 @@ button {
     padding: 15px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
     font-family: 'Roboto', sans-serif;
-}
-input {
-    border: solid 1px #CCC;
-    width: 285px;
-    height: 40px;
-    border-radius: 10px;
-    font-family: 'Titillium Web', sans-serif;
 }
 p {
     margin-top: 10px;
@@ -141,4 +143,32 @@ a:hover {
 }
 #errotermouso {
     margin-left: 3em;
+}
+.form-input{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.973);
+}
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 30px;
+    padding: 10px; 
+    margin-left: 5px;   
+}
+.fa-times-circle{
+    color: red;
+    margin-left: 5px;
+}
+#iconerronome, #iconerrosobren, #iconerroemail,#iconerrosenha, #iconerroconfsenha, #iconerrograduacao, #iconerrocnpj{
+    display: none;
+}
+.form{
+    display: flex;
 }
