@@ -11,12 +11,13 @@
 
     --fontetitulo: 'Roboto', sans-serif;
     --fonte02: 'Titillium Web', sans-serif;
+    --fonttext: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
 
 body {
     background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fontetitulo);
 }
 .tipodeusuario {
     height: 320px;

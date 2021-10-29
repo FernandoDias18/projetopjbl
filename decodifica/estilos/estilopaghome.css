@@ -12,7 +12,7 @@
 
     --fontetitulo: 'Roboto', sans-serif;
     --fonte02: 'Titillium Web', sans-serif;
-    --fonttext: 'Crimson', serif;
+    --fonttext: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
 * {
@@ -24,7 +24,7 @@
 a {
     color: white;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: var(--fontetitulo);
     margin: 10px;
 }
 a:hover{
@@ -262,7 +262,7 @@ div > span > img {
         display: none;
     }
     #nav.active .menu {
-        height: 100%;
+        height: 231%;
         visibility: visible;
         overflow-y: auto;
     }
