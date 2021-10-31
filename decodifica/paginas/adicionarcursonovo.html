@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar conteúdo curso - Decodifica</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/estiloadicionarconteudo.css">
+    <link rel="stylesheet" href="../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">logo</a>
+        <nav class="nav" id="nav">
+            <button id="btn-mobile"><span id="hamburguer" class="fas fa-bars"></span></button>
+            <ul class="menu">
+                <li><a href="#">CURSOS</a></li>
+                <li><a href="#">FÓRUM</a></li>
+                <li id="linha"><strong id="separador">|</strong></li>
+                <li><a href="escolhausuario.html">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>CRIAR CURSO</h1>
+    <p class="devider"></p>
+    <div class="formulario">
+        <div class="cadastro" id="tela-cadastro">
+            <div class="campos">
+                <p class="textinfo">NOME DO PROFESSOR</p>
+                <div class="form-input">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <input type="text" placeholder="NOME PROFESSOR" id="nomeprofessor">
+                    <i class="fas fa-times-circle"  id="iconerronomeprof"></i>
+                </div>
+                <p class="txterro" id="erronomeprof"></p>
+            </div>
+            <div class="campos">
+                <p class="textinfo">NOME DO CURSO</p>
+                <div class="form-input">
+                    <i class="fas fa-graduation-cap"></i>
+                    <input type="text" placeholder="NOME DO CURSO" id="nomecurso">
+                    <i class="fas fa-times-circle"  id="iconerronomecurso"></i>
+                </div>
+                <p class="txterro" id="erronomecurso"></p>
+            </div>
+            <div class="campos">
+                <p class="textinfo">QUANTIDADE DE MÓDULOS</p>
+                <div class="form-input">
+                    <i class="fas fa-folder-plus"></i>
+                        <input type="number" min="1" id="quantidademodulos" placeholder="QUANTIDADE DE MÓDULOS">
+                        <i class="fas fa-times-circle"  id="iconerroquantidademodulo"></i>
+                </div>
+                <p class="txterro" id="erroquantidademodulo"></p>
+            </div>
+            <div class="campos">
+                <p class="textinfo">QUANTIDADE DE HORAS</p>
+                    <div class="form-input">
+                        <i class="fas fa-clock"></i>
+                        <input type="text" name="quantidadehoras" placeholder="QUANTIDADE DE HORAS" id="quantidadehoras">
+                        <i class="fas fa-times-circle"  id="iconerroquantidadehoras"></i>
+                    </div>
+                <p class="txterro" id="erroquantidadehoras"></p>
+            </div>
+            <div class="campos">
+                <p class="textinfo">DIGITE A DESCRIÇÃO DO CURSO</p>
+                <div class="form-input">
+                   <textarea name="descricaocurso" id="descricaocurso" cols="50" rows="10" placeholder="DIGITE A DESCRIÇÃO DO CURSO"></textarea>
+                    <i class="fas fa-times-circle"  id="iconerrodescricao"></i>
+                </div>
+            <p class="txterro" id="errodescricao"></p>
+            </div>
+        <button class="enviarconteudo" onclick="verificarcurso()">DEFINIR MÓDULOS</button>
+    </div>
+    <footer>
+        <p class="info"><a href="#" class="contato">CONTATO</a> | <a href="#" class="ajuda">AJUDA</a></p>
+        <p class="copy">COPYRIGHT &copy 2021 - DECODIFICA</p>
+    </footer>
+<script src="../script/menuhamburguer.js"></script>
+<script src="../script/scriptadcionarconteudo.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+:root {
+    --cor01: #0A3FF8;
+    --cor02: #0ac4c0;
+    --cor03: #0B97DE;
+    --cor04: #0B28DE;
+    --cor05: #00EBBA;
+
+    --fontetitulo: 'Roboto', sans-serif;
+    --fonte02: 'Titillium Web', sans-serif;
+    --fonttext: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--fontetitulo);
+    margin: 10px;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 90px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu > li {
+    margin: 10px;
+}
+
+.menu > a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.devider {
+    border-top: 3px solid black;
+    display: block;
+    line-height: 1px;
+    position: relative;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: var(--fontetitulo);
+}
+.enviarconteudo {
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
+}
+.enviarconteudo:hover {
+    background-color: #35cfae;
+    cursor: pointer;
+    
+}
+.textinfo {
+    font-family: var(--fonte02);
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+}
+.txterro {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 2em;
+    color: rgb(204, 0, 0);
+}
+.form-input{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    margin-top: 10px;
+}
+input {
+    border: none;
+    outline: none;
+    width: 30%;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 30px;
+    padding: 10px; 
+    margin-left: 5px;
+}
+.fa-times-circle{
+    color: red;
+    margin-left: 5px;
+}
+.formulario{
+    margin-top: 10px;
+}
+.cadastro > div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cadastro{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.contato, .ajuda, .copy{
+    padding: 20px;
+}
+footer {
+    background-color: #0A3FF8;
+    color: white;
+    font-family: var(--fonte02);
+    margin-top: 50px;
+}
+.info{
+    text-align: right;
+    padding: 10px;
+}
+#iconerronomeprof, #iconerromodulo, #iconerrovideo,#iconerropdf, #iconerronomecurso, #iconerroquantidademodulo, 
+#iconerroquantidadehoras, #iconerrodescricao{
+    display: none;
+}
+textarea{
+    resize: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
