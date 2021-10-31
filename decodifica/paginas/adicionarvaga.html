@@ -22,55 +22,55 @@
             </ul>
         </nav>
     </header>
-    <h1>CRIAR CURSO</h1>
+    <h1>ADICIONAR VAGA DE EMREGO</h1>
     <p class="devider"></p>
     <div class="formulario">
         <div class="cadastro" id="tela-cadastro">
             <div class="campos">
-                <p class="textinfo">NOME DO PROFESSOR</p>
+                <p class="textinfo">NOME DA EMPRESA</p>
                 <div class="form-input">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <input type="text" placeholder="NOME PROFESSOR" id="nomeprofessor">
-                    <i class="fas fa-times-circle"  id="iconerronomeprof"></i>
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" placeholder="NOME DA EMPRESA" id="nomeempresa">
+                    <i class="fas fa-times-circle"  id="iconerronomeempresa"></i>
                 </div>
-                <p class="txterro" id="erronomeprof"></p>
+                <p class="txterro" id="erronomeempresa"></p>
             </div>
             <div class="campos">
-                <p class="textinfo">NOME DO CURSO</p>
+                <p class="textinfo">CARGO DA VAGA</p>
                 <div class="form-input">
-                    <i class="fas fa-graduation-cap"></i>
-                    <input type="text" placeholder="NOME DO CURSO" id="nomecurso">
-                    <i class="fas fa-times-circle"  id="iconerronomecurso"></i>
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" placeholder="CARGO DA VAGA" id="cargo">
+                    <i class="fas fa-times-circle"  id="iconerrocargo"></i>
                 </div>
-                <p class="txterro" id="erronomecurso"></p>
+                <p class="txterro" id="errocargo"></p>
             </div>
             <div class="campos">
-                <p class="textinfo">QUANTIDADE DE MÓDULOS</p>
+                <p class="textinfo">MÉDIA SALARIAL</p>
                 <div class="form-input">
-                    <i class="fas fa-folder-plus"></i>
-                        <input type="number" min="1" id="quantidademodulos" placeholder="QUANTIDADE DE MÓDULOS">
-                        <i class="fas fa-times-circle"  id="iconerroquantidademodulo"></i>
+                    <i class="fas fa-money-check-alt"></i>
+                    <input type="text" placeholder="MÉDIA SALARIAL" id="salario">
+                    <i class="fas fa-times-circle"  id="iconerrosalario"></i>
                 </div>
-                <p class="txterro" id="erroquantidademodulo"></p>
+                <p class="txterro" id="errosalario"></p>
             </div>
             <div class="campos">
-                <p class="textinfo">QUANTIDADE DE HORAS</p>
+                <p class="textinfo">HORÁRIO DE TRABALHO</p>
                     <div class="form-input">
                         <i class="fas fa-clock"></i>
-                        <input type="text" name="quantidadehoras" placeholder="QUANTIDADE DE HORAS" id="quantidadehoras">
-                        <i class="fas fa-times-circle"  id="iconerroquantidadehoras"></i>
+                        <input type="text" name="horariovaga" id="horariovaga" placeholder="HORÁRIO DE TRABALHO">
+                        <i class="fas fa-times-circle"  id="iconerrohorariovaga"></i>
                     </div>
-                <p class="txterro" id="erroquantidadehoras"></p>
+                <p class="txterro" id="errohorariovaga"></p>
             </div>
             <div class="campos">
-                <p class="textinfo">DIGITE A DESCRIÇÃO DO CURSO</p>
+                <p class="textinfo">DESCRIÇÃO DA VAGA (FUNÇÕES, REQUISITOS E BENEFÍCIOS)</p>
                 <div class="form-input">
-                   <textarea name="descricaocurso" id="descricaocurso" cols="50" rows="10" placeholder="DIGITE A DESCRIÇÃO DO CURSO"></textarea>
-                    <i class="fas fa-times-circle"  id="iconerrodescricao"></i>
+                    <textarea name="descricaovaga" id="descricaovaga" cols="50" rows="10" placeholder="DESCRIÇÃO DA VAGA (FUNÇÕES, REQUISITOS E BENEFÍCIOS)"></textarea>
+                    <i class="fas fa-times-circle"  id="iconerrodescricaovaga"></i>
                 </div>
-            <p class="txterro" id="errodescricao"></p>
+            <p class="txterro" id="errodescricaovaga"></p>
             </div>
-        <button class="enviarconteudo" onclick="verificarcurso()">DEFINIR MÓDULOS</button>
+        <button class="enviarconteudo" onclick="verificarvaga()">ENVIAR</button>
     </div>
     <footer>
         <p class="info"><a href="pag-contato.html" class="contato">CONTATO</a> | <a href="#" class="ajuda">AJUDA</a></p>

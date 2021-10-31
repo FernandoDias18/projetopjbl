@@ -167,6 +167,9 @@ footer {
 #iconerroquantidadehoras, #iconerrodescricao{
     display: none;
 }
+#iconerronomeempresa, #iconerrocargo, #iconerrohorariovaga, #iconerrodescricaovaga, #iconerrosalario{
+    display: none;
+}
 textarea{
     resize: none;
     border-radius: 20px;
