@@ -225,6 +225,7 @@ function validarlogin() {
             
         if(email == validar.email && senha == validar.senha){
             if(validar.email == empresaemail){
+                window.location.href = "../usuariologado/empresa/paghomeempresa.html";
             }
             else if(validar.email == alunoemail){
                 window.location.href = "../usuariologado/aluno/paghomealuno.html";
