@@ -108,20 +108,21 @@ a:visited {
 }
 
 .botao {
-    margin-top: 6%;
-    margin-left: 1%;
-    width: 100px;
-    height: 35px;
-    font-size: 1em;
-    color: #ffffff;
-    font-weight: bold;
-    background-color: var(--cor03);
-    border: 0px solid #ffffff;
-    border-radius: 15px;
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
 }
-
 .botao:hover {
+    background-color: #35cfae;
     cursor: pointer;
+    
 }
 
 .paragrafo-input {
@@ -182,7 +183,7 @@ textarea:focus {
     border-color: var(--cor03);
     box-shadow: 0 0 5px var(--cor01);
 }
-.contato, .ajuda, .copy{
+.contato,.copy{
     padding: 20px;
 }
 .copy{

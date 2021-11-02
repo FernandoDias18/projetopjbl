@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar-se - Decodifica</title>
-    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/estilotelaformulario.css">
-    <link rel="stylesheet" href="../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
-   
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../estilos/estilotelaformulario.css">
+    <link rel="stylesheet" href="../../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
 </head>
-
 <body>
     <div class="telaformulario">
-        <div id="cadastro-professor" class="cadastro-professor">
-            <p class="logo"><img src="../imagens/logosite.png" alt=""></p>
+        <div class="cadastro" id="tela-cadastro">
+            <p class="logo"><img src="../../imagens/logosite.png" alt=""></p>
             <p class="devider"></p>
             <p class="txttitulo">CADASTRE-SE GRÁTIS</p>
             <p class="textinfo">NOME</p>
@@ -38,13 +36,6 @@
                 <i class="fas fa-times-circle" id="iconerroemail"></i>
             </div>
             <p class="txterro" id="erroemail"></p>
-            <p class="textinfo">CURSO DE GRADUAÇÃO</p>
-            <div class="form-input">
-                <i class="fas fa-user-graduate"></i>
-                <input type="text" placeholder="CURSO DE GRADUAÇÃO" id="cursograduacao">
-                <i class="fas fa-times-circle" id="iconerrograduacao"></i>
-            </div>
-            <p class="txterro" id="errocursograduacao"></p>
             <p class="textinfo">SENHA</p>
             <div class="form-input">
                 <i class="fas fa-lock"></i>
@@ -62,9 +53,9 @@
             <p class="textinfo"><input type="checkbox" name="versenha" class="checkbox" onclick="mostrarsenha()">Mostrar Senha</p>
             <p class="textinfo"><input type="checkbox" name="termouso" id="termouso" class="checkbox">Concorda com os <a href="#">termos de uso</a></p>
             <p class="txterro" id="errotermouso"></p>
-            <button onclick="validarprofessor()">CADASTRAR</button>  
+            <button onclick="validaraluno()">CADASTRAR</button>  
         </div>
     </div>
-    <script src="../script-validação/scriptformulario.js"></script>
+    <script src="../../script/scriptformulario.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ function verificarconteudo(){
     }
     if (nomeprofessor.length >= 3 && nomemodulo != "")
     alert("Conteúdo adicionado com sucesso!")
-    window.location.href = "pagcursos.html"
+    window.location.href = "../usuariologado/professor/pagipagcursosprof.html" 
 }
 function verificarcurso(){
     var nomeprofessor = document.getElementById("nomeprofessor").value.trim();
@@ -52,7 +52,7 @@ function verificarcurso(){
     }
     if (nomeprofessor.length >= 3 && nomecurso != "" && quantidadehoras != "" && quantidademodulos > 0 && descricao != "") {
         alert("Curso criado com sucesso!")
-        window.location.href = "adicionarcursonovo.html"
+        window.location.href = "../usuariologado/professor/adicionarconteudocurso.html"
     }  
 }
 function verificarvaga(){
@@ -89,6 +89,6 @@ function verificarvaga(){
     }
     if (nomeempresa != "" && cargo != "" && horario != "" && salario != "" && descricao != "") {
         alert("Vaga publicada com sucesso!")
-        window.location.href = "adicionarcursonovo.html"
+        window.location.href = "#.html"
     }
 }

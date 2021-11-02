@@ -48,6 +48,14 @@ function validaraluno(){
     }
     if(nome.length > 3 && sobrenome != "" && email != "" && senha.length > 5 &&
     confirmarsenha == senha && termouso.checked == true) {
+        var alunos = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        alunos.push({
+            nomealuno: nome,
+            sobrenomealuno: sobrenome,
+            emailaluno: email,
+            senhaaluno: senha
+        })
+        localStorage.setItem('usuarios', JSON.stringify(alunos))
         alert("CADASTRO REALIZADO COM SUCESSO")
         window.location.href = "login.html";
     }
@@ -59,7 +67,7 @@ function validarempresa() {
     var senha = document.getElementById("senha").value.trim();
     var confirmarsenha = document.getElementById("confirmarsenha").value.trim();
     var termouso = document.getElementById("termouso");
-    document.getElementById("tela-empresa").style.height = "1150px"
+    document.getElementById("tela-empresa").style.height = "1000px"
     
     if (nome == ""){
         document.getElementById('erronome').innerHTML = `<p>ERRO! Nome da empresa inválido</p>`
@@ -93,7 +101,18 @@ function validarempresa() {
     confirmarsenha == senha && termouso.checked == true) {
         alert("CADASTRO REALIZADO COM SUCESSO")
         window.location.href = "login.html";
+        var empresa = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        empresa.push({
+            nomeempresa: nome,
+            cnpj: cnpj,
+            emailempresa: email,
+            senhaempresa: senha
+        })
+        localStorage.setItem('usuarios', JSON.stringify(empresa))
+        alert("CADASTRO REALIZADO COM SUCESSO")
+        window.location.href = "login.html";
     }
+    
 }
 function validarprofessor() {
     var nome = document.getElementById("nome").value.trim();
@@ -140,6 +159,15 @@ function validarprofessor() {
     }
     if (nome.length > 3 && sobrenome != "" && email != "" && curso != "" && senha.length > 5 &&
         confirmarsenha == senha && termouso.checked == true){
+        var professor = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        professor.push({
+            nomeprofessor: nome,
+            sobrenoprofessor: sobrenome,
+            emailprofessor: email,
+            cursoprofessor: curso,
+            senhaprofessor: senha
+        })
+        localStorage.setItem('usuarios', JSON.stringify(professor))
         alert("CADASTRO REALIZADO COM SUCESSO")
         window.location.href = "login.html";
     }
@@ -160,8 +188,52 @@ function validarlogin() {
         document.getElementById("iconerrosenha").style.display = "block"
     }
     if (email != "" && senha != ""){
-        window.location.href = "paginahome.html";
-    }
+        var usuario = [];
+
+        var validar = {
+            email: '',
+            senha: ''
+
+        }
+
+        usuario = JSON.parse(localStorage.getItem("usuarios"))
+        var alunoemail = "";
+        var empresaemail = ""
+        var professoremail = ""
+        usuario.forEach((item) => {
+        if(email == item.emailaluno && senha == item.senhaaluno){
+            validar = {
+                email: item.emailaluno,
+                senha: item.senhaaluno
+            }
+            alunoemail = item.emailaluno
+            
+        }else if(email == item.emailempresa && senha == item.senhaempresa){
+            validar = {
+                email: item.emailempresa,
+                senha: item.senhaempresa
+            }
+            empresaemail = item.emailempresa
+        }else if(email == item.emailprofessor && senha == item.senhaprofessor){
+            validar = {
+                email: item.emailprofessor,
+                senha: item.senhaprofessor
+            }
+            professoremail = item.emailprofessor
+        }
+        })
+            
+        if(email == validar.email && senha == validar.senha){
+            if(validar.email == empresaemail){
+            }
+            else if(validar.email == alunoemail){
+                window.location.href = "../usuariologado/aluno/paghomealuno.html";
+            }
+            else if(validar.email == professoremail){
+                window.location.href = "../usuariologado/professor/paghomeprof.html";
+            }
+        }
+    }   
 
 }
 function validarsenhanova(){

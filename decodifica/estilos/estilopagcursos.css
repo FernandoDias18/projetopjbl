@@ -77,7 +77,7 @@ a:visited {
     text-align: right;
     padding: 10px;
 }
-.contato, .ajuda, .copy{
+.contato,.copy{
     padding: 20px;
 }
 footer {
@@ -165,6 +165,28 @@ i{
     margin: auto;
     margin-right: 10px;
 }
+.botaocriarcurso{
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.botaocriarcurso:hover {
+    background-color: #35cfae;
+    cursor: pointer;
+    
+}
+.botaocriarcurso > a{
+    color: black;
+}
+
 @media (max-width: 940px) {
     .menu {
         position: absolute;

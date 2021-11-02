@@ -105,7 +105,7 @@ main {
     text-align: right;
     padding: 10px;
 }
-.contato, .ajuda, .copy{
+.contato, .copy{
     padding: 20px;
 }
 footer {
@@ -135,6 +135,7 @@ h1 {
     justify-content: center;
     width: 50%;
     margin: auto;
+    margin-top: 20px;
 }
 .iconeslinguagens > h1 > span, main> p > span{
     color: #0A3FF8;

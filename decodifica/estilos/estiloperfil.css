@@ -131,7 +131,7 @@ footer {
     text-align: right;
     padding: 10px;
 }
-.contato, .ajuda, .copy{
+.contato,.copy{
     padding: 20px;
 }
 .cursosfeitos{
@@ -244,6 +244,21 @@ h2{
 .icone{
     display: flex;
 }
+.botaosair{
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    width: 200px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40%;
+}
+.botaosair > a{
+    color: black;
+}
 @media(max-width: 940px) {
     .menu {
         position: absolute;
@@ -299,5 +314,9 @@ h2{
     .informacoes{
         padding: 10px;
         margin-top: 30px;
+    }
+    .maisinfo{
+        display: block;
+        margin-bottom: 100px;
     }
 }

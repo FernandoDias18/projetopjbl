@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODIFICA - PÁGINA INICIAL</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../../../estilos/estilodoacao.css">
+    <link rel="shortcut icon" href="../../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">logo</a>
+        <nav class="nav" id="nav">
+            <button id="btn-mobile"><span id="hamburguer" class="fas fa-bars"></span></button>
+            <ul class="menu">
+                <li><a href="pagcursosaluno.html">CURSOS</a></li>
+                <li><a href="#">FÓRUM</a></li>
+                <li><a href="paginadoacoes.html">DOAÇÕES</a></li>
+                <li><a href="#">JOBMATCH</a></li>
+                <li id="linha"><strong id="separador">|</strong></li>
+                <li><a href="perfil.html">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="textodoacao">
+        <div class="texto">
+            <h1>SEJA UM APOIADOR!</h1>
+            <p class="textapoiador">Ajude-nos a continuar produzindo um conteúdo de qualidade</p>
+        </div>
+        <div class="beneficios">
+            <h1>VEJA OS BENEFÍCIOS QUE VOCÊ TERÁ AO SER UM APOIADOR!!</h1>
+            <ul>
+                <li>
+                    <i class="fas fa-star"></i>
+                    CURSOS EXCLUSIVOS
+                </li>
+                <li>
+                    <i class="fas fa-star"></i>
+                    FIGURINHA DE DOADOR NO PERFIL
+                </li>
+                <li>
+                    <i class="fas fa-star"></i>
+                    PERGUNTAS COM PRIORIDADE NO FÓRUM
+                </li>
+                <li>
+                    <i class="fas fa-star"></i>
+                    MATERIAL DIDÁTICO EXCLUSIVO
+                </li>
+                <li>
+                    <i class="fas fa-star"></i>
+                    CONTATO COM OS PROFESSORES PARA TIRAR DÚVIDAS
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p class="devider"></p>
+    <h1>REALIZE A SUA DOAÇÃO</h1>
+    <div class="formulario">
+        <div class="cadastro" id="tela-cadastro">
+            <div class="campos">
+                <div>
+                    <p class="textinfo">NOME</p>
+                    <div class="form-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="NOME" id="nome">
+                        <i class="fas fa-times-circle"  id="iconerronome"></i>
+                    </div>
+                    <p class="txterro" id="erronome"></p>
+                </div>
+                <div>
+                    <p class="textinfo">CPF</p>
+                    <div class="form-input">
+                        <i class="fas fa-address-card"></i>
+                        <input type="text" placeholder="CPF" id="cpf">
+                        <i class="fas fa-times-circle"  id="iconerrocpf"></i>
+                    </div>
+                    <p class="txterro" id="errocpf"></p>
+                </div>
+            </div>
+            <div class="campos">
+                    <div>
+                        <p class="textinfo">E-MAIL</p>
+                        <div class="form-input">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="E-MAIL" id="email">
+                            <i class="fas fa-times-circle"  id="iconerroemail"></i>
+                        </div>
+                        <p class="txterro" id="erroemail"></p>
+                    </div>
+                    <div>
+                        <p class="textinfo">NOME (ESCRITO NO CARTÃO)</p>
+                        <div class="form-input">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="NOME (ESCRITO NO CARTÃO)" id="nomecartao">
+                            <i class="fas fa-times-circle"  id="iconerronomecartao"></i>
+                        </div>
+                        <p class="txterro" id="erronomecartao"></p>
+                    </div>
+            </div>
+            <div class="campos">
+                <div>
+                    <p class="textinfo">NÚMERO DO CARTÃO</p>
+                    <div class="form-input">
+                        <i class="fas fa-credit-card"></i>
+                        <input type="text" placeholder="NÚMERO DO CARTÃO" id="numerocartao">
+                        <i class="fas fa-times-circle"  id="iconerronumerocartao"></i>
+                    </div>
+                    <p class="txterro" id="erronumerocartao"></p>
+                </div>
+                <div>
+                    <p class="textinfo">VALIDADE DO CARTÃO</p>
+                    <div class="form-input">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="text" placeholder="VALIDADE DO CARTÃO" id="validade">
+                        <i class="fas fa-times-circle"  id="iconerrovalidade"></i>
+                    </div>
+                    <p class="txterro" id="errovalidade"></p>
+                </div>
+            </div>
+            <div class="campos">
+                <div>
+                    <p class="textinfo">CVC</p>
+                    <div class="form-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="CVC" id="cvc">
+                        <i class="fas fa-times-circle"  id="iconerrocvc"></i>
+                    </div>
+                    <p class="txterro" id="errocvc"></p>
+                </div>
+                <div>
+                    <p class="textinfo">VALOR DA DOAÇÃO</p>
+                    <div class="form-input">
+                        <i class="fas fa-money-bill-alt"></i>
+                        <input type="text" placeholder="R$ 00,00" id="valordoacao">
+                        <i class="fas fa-times-circle"  id="iconerrovalordacao"></i>
+                    </div>
+                    <p class="txterro" id="errovalordoacao"></p>
+                </div>
+            </div> 
+            <button onclick="validarpagamentoaluno()" class="realizardoacao">REALIZAR DOAÇÃO</button>
+        </div>
+    </div>
+    <footer>
+        <p class="info"><a href="pag-contato.html" class="contato">CONTATO</a></p>
+        <p class="copy">COPYRIGHT &copy 2021 - DECODIFICA</p>
+    </footer>
+<script src="../../../script/scriptdoacao.js"></script>
+<script src="../../../script/menuhamburguer.js"></script>
+</body>
+</html>
