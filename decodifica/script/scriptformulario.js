@@ -46,7 +46,7 @@ function validaraluno(){
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
-    if(nome.length > 3 && sobrenome != "" && email != "" && senha.length > 5 &&
+    if(nome.length > 3 && sobrenome != "" && email != "" && senha.length >= 5 &&
     confirmarsenha == senha && termouso.checked == true) {
         var alunos = JSON.parse(localStorage.getItem("usuarios") || "[]");
         alunos.push({
@@ -74,7 +74,7 @@ function validarempresa() {
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
     }
-    if (cnpj == "" || cnpj.length < 14 || cnpj.length > 14){
+    if (cnpj == "" || cnpj.length != 14){
         document.getElementById('errocnpj').innerHTML = `<p>ERRO! CNPJ inválido</p>`
         document.getElementById("cnpj").style.border = "solid 1px red"
         document.getElementById("iconerrocnpj").style.display = "block"
@@ -97,20 +97,20 @@ function validarempresa() {
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
-    if(nome.length > 3 && email != "" &&  cnpj == 14 && senha.length > 5 &&
-    confirmarsenha == senha && termouso.checked == true) {
-        alert("CADASTRO REALIZADO COM SUCESSO")
-        window.location.href = "login.html";
+    if(nome.length > 3 && email != "" &&  cnpj.length == 14 && senha.length >= 5 &&
+        confirmarsenha == senha && termouso.checked == true) {
         var empresa = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        
         empresa.push({
             nomeempresa: nome,
             cnpj: cnpj,
             emailempresa: email,
             senhaempresa: senha
         })
+
         localStorage.setItem('usuarios', JSON.stringify(empresa))
         alert("CADASTRO REALIZADO COM SUCESSO")
-        window.location.href = "login.html";
+        window.location.href = "../publicogeral/login.html";
     }
     
 }
@@ -157,7 +157,7 @@ function validarprofessor() {
         document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
-    if (nome.length > 3 && sobrenome != "" && email != "" && curso != "" && senha.length > 5 &&
+    if (nome.length > 3 && sobrenome != "" && email != "" && curso != "" && senha.length >= 5 &&
         confirmarsenha == senha && termouso.checked == true){
         var professor = JSON.parse(localStorage.getItem("usuarios") || "[]");
         professor.push({
@@ -258,7 +258,7 @@ function validarsenhanova(){
         document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
-    if (email != "" && senha.length > 5 && confirmarsenha == senha ){
+    if (email != "" && senha.length >= 5 && confirmarsenha == senha ){
         alert("SENHA ALTERADA COM SUCESSO")
         window.location.href = "login.html";
     }
