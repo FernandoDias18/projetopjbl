@@ -233,6 +233,12 @@ function validarlogin() {
             else if(validar.email == professoremail){
                 window.location.href = "../usuariologado/professor/paghomeprof.html";
             }
+        }else{
+            document.getElementById("email").style.border = "solid 1px red"
+            document.getElementById("iconerroemail").style.display = "block"
+            document.getElementById("errosenha").innerHTML = `<p>ERRO! E-mail ou senha inválidos</p>`
+            document.getElementById("senha").style.border = "solid 1px red"
+            document.getElementById("iconerrosenha").style.display = "block"
         }
     }   
 
