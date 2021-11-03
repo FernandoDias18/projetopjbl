@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar conteúdo curso - Decodifica</title>
+    <title>Responder Pergunta - Decodifica</title>
     <link rel="shortcut icon" href="../../../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../../estilos/estiloadicionarconteudo.css">
     <link rel="stylesheet" href="../../../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <h1>ADICIONAR CONTEÚDO</h1>
+    <h1>RESPONDER PERGUNTA</h1>
     <p class="devider"></p>
     <div class="formulario">
         <div class="cadastro" id="tela-cadastro">
@@ -36,36 +36,16 @@
                 <p class="txterro" id="erronomeprof"></p>
             </div>
             <div class="campos">
-                <p class="textinfo">NOME DO MÓDULO</p>
+                <p class="textinfo">DIGITE A RESPOSTA</p>
                 <div class="form-input">
-                    <i class="fas fa-graduation-cap"></i>
-                    <input type="text" placeholder="NOME DO MÓDULO" id="nomemodulo">
-                    <i class="fas fa-times-circle"  id="iconerromodulo"></i>
+                   <textarea name="descricaocurso" id="resposta" cols="50" rows="10" placeholder="DIGITE A RESPOSTA"></textarea>
+                    <i class="fas fa-times-circle"  id="iconerroresposta"></i>
                 </div>
-                <p class="txterro" id="erronomemodulo"></p>
+            <p class="txterro" id="erroresposta"></p>
             </div>
-            <div class="campos">
-                <p class="textinfo">ARQUIVO PDF</p>
-                    <div class="form-input">
-                        <i class="fas fa-file-pdf"></i>
-                        <input type="file" name="arquivopdf" id="arquivopdf" accept="application/pdf" multiple>
-                        <i class="fas fa-times-circle"  id="iconerropdf"></i>
-                    </div>
-                <p class="txterro" id="erropdf"></p>
-            </div>
-            <div class="campos">
-                <p class="textinfo">ARQUIVO VÍDEO AULA</p>
-                <div class="form-input">
-                    <i class="fas fa-video"></i>
-                    <input type="file" name="arquivovideo" id="arquivovideo" accept="video/*">
-                    <i class="fas fa-times-circle"  id="iconerrovideo"></i>
-                </div>
-            <p class="txterro" id="errovideo"></p>
-            </div>
-        <button class="enviarconteudo" onclick="verificarconteudo()">ENVIAR</button>
+        <button class="enviarconteudo" onclick="verificarrespostaprof()">ENVIAR RESPOSTA</button>
     </div>
     <footer>
-        <p class="info"><a href="../../Publicogeral/pag-contato.html" class="contato">CONTATO</a></p>
         <p class="copy">COPYRIGHT &copy 2021 - DECODIFICA</p>
     </footer>
 <script src="../../../script/menuhamburguer.js"></script>

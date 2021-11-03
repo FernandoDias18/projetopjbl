@@ -92,3 +92,63 @@ function verificarvaga(){
         window.location.href = "#.html"
     }
 }
+function verificarpergunta(){
+    var nomealuno = document.getElementById("nomealuno").value.trim();
+    var titulopergunta = document.getElementById("titulopergunta").value.trim();
+    var pergunta = document.getElementById("pergunta").value.trim();
+
+    if (nomealuno.length < 3){
+        document.getElementById('erronomealuno').innerHTML = `<p>ERRO! Nome do Aluno inválido</p>`
+        document.getElementById("nomealuno").style.border = "solid 1px red"
+        document.getElementById("iconerronomealuo").style.display = "block"
+    }
+    if (titulopergunta == ""){
+        document.getElementById('errotitulopergunta').innerHTML = `<p>ERRO! Título da Pergunta inválido</p>`
+        document.getElementById("titulopergunta").style.border = "solid 1px red"
+        document.getElementById("iconerrotitulopergunta").style.display = "block"
+    }
+    if (pergunta == ""){
+        document.getElementById('erropergunta').innerHTML = `<p>ERRO! Pergunta inválida</p>`
+        document.getElementById("pergunta").style.border = "solid 1px red"
+        document.getElementById("iconerropergunta").style.display = "block"
+    }
+    if (nomealuno.length >= 3 && nomemodulo != "" && pergunta != "")
+    alert("Pergunta feita com sucesso! Você Recebeu 5 pontos")
+    window.location.href = "../usuariologado/aluno/forum.html" 
+}
+function verificarresposta(){
+    var nomealuno = document.getElementById("nomealuno").value.trim();
+    var resposta = document.getElementById("resposta").value.trim();
+
+    if (nomealuno.length < 3){
+        document.getElementById('erronomealuno').innerHTML = `<p>ERRO! Nome do Aluno inválido</p>`
+        document.getElementById("nomealuno").style.border = "solid 1px red"
+        document.getElementById("iconerronomealuo").style.display = "block"
+    }
+    if (resposta == ""){
+        document.getElementById('erroresposta').innerHTML = `<p>ERRO! Resposta inválida</p>`
+        document.getElementById("resposta").style.border = "solid 1px red"
+        document.getElementById("iconerroresposta").style.display = "block"
+    }
+    if (nomealuno.length >= 3 && resposta != "")
+    alert("Resposta enviada com sucesso! Você Recebeu 15 pontos")
+    window.location.href = "../usuariologado/aluno/forum.html" 
+}
+function verificarrespostaprof(){
+    var nomeprofessor = document.getElementById("nomeprofessor").value.trim();
+    var resposta = document.getElementById("resposta").value.trim();
+
+    if (nomeprofessor.length < 3){
+        document.getElementById('erronomeprof').innerHTML = `<p>ERRO! Nome do Professor inválido</p>`
+        document.getElementById("nomeprofessor").style.border = "solid 1px red"
+        document.getElementById("iconerronomeprof").style.display = "block"
+    }
+    if (resposta == ""){
+        document.getElementById('erroresposta').innerHTML = `<p>ERRO! Resposta inválida</p>`
+        document.getElementById("resposta").style.border = "solid 1px red"
+        document.getElementById("iconerroresposta").style.display = "block"
+    }
+    if (nomeprofessor.length >= 3 && resposta != "")
+    alert("Resposta enviada com sucesso!")
+    window.location.href = "../usuariologado/aluno/forum.html" 
+}
