@@ -54,7 +54,7 @@ button:hover {
     border-top: 2px solid #d9dadc;
     display: block;
     line-height: 1px;
-    margin: 5px 0px;
+    margin: 5px 0;
     position: relative;
     text-align: center;
 }
@@ -64,9 +64,16 @@ img {
     margin: 0px;
     padding: 0px;
 }
-.logo{
-    margin: 0px;
+
+.div-logo {
+    height: 100px;
+    background-image: url(../imagens/logosite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
     color: black;

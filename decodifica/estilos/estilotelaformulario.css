@@ -50,11 +50,15 @@ body {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
 }
 
-.logo {
+.div-logo {
     height: 100px;
-    width: 200px;
-    margin-left: 40px;
+    background-image: url(../imagens/logosite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    margin: 0;
 }
+
 img {
     width: 250px;
     height: 150px;
@@ -128,7 +132,7 @@ a:hover {
     border-top: 2px solid #d9dadc;
     display: block;
     line-height: 1px;
-    margin: 15px 0;
+    margin: 5px 0;
     position: relative;
     text-align: center;
 }
