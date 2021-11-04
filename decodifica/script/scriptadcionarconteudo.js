@@ -12,11 +12,12 @@ function verificarconteudo(){
     if (nomemodulo == ""){
         document.getElementById('erronomemodulo').innerHTML = `<p>ERRO! Nome do Módulo inválido</p>`
         document.getElementById("nomemodulo").style.border = "solid 1px red"
-        document.getElementById("iconerronomemodulo").style.display = "block"
+        document.getElementById("iconerromodulo").style.display = "block"
     }
-    if (nomeprofessor.length >= 3 && nomemodulo != "")
-    alert("Conteúdo adicionado com sucesso!")
-    window.location.href = "../usuariologado/professor/pagipagcursosprof.html" 
+    if (nomeprofessor.length >= 3 && nomemodulo != ""){
+        alert("Conteúdo adicionado com sucesso!")
+        window.location.href ="pagcursosprof.html"
+    }
 }
 function verificarcurso(){
     var nomeprofessor = document.getElementById("nomeprofessor").value.trim();
@@ -52,7 +53,7 @@ function verificarcurso(){
     }
     if (nomeprofessor.length >= 3 && nomecurso != "" && quantidadehoras != "" && quantidademodulos > 0 && descricao != "") {
         alert("Curso criado com sucesso!")
-        window.location.href = "../usuariologado/professor/adicionarconteudocurso.html"
+        window.location.href = "adicionarconteudocurso.html"
     }  
 }
 function verificarvaga(){
@@ -89,22 +90,22 @@ function verificarvaga(){
     }
     if (nomeempresa != "" && cargo != "" && horario != "" && salario != "" && descricao != "") {
         alert("Vaga publicada com sucesso!")
-        window.location.href = "#.html"
+        window.location.href = "pag-vagas.html"
     }
 }
 function verificarpergunta(){
     var nomealuno = document.getElementById("nomealuno").value.trim();
-    var titulopergunta = document.getElementById("titulopergunta").value.trim();
+    var titulopergunta = document.getElementById("titulo").value.trim();
     var pergunta = document.getElementById("pergunta").value.trim();
 
     if (nomealuno.length < 3){
         document.getElementById('erronomealuno').innerHTML = `<p>ERRO! Nome do Aluno inválido</p>`
         document.getElementById("nomealuno").style.border = "solid 1px red"
-        document.getElementById("iconerronomealuo").style.display = "block"
+        document.getElementById("iconerronomealuno").style.display = "block"
     }
     if (titulopergunta == ""){
         document.getElementById('errotitulopergunta').innerHTML = `<p>ERRO! Título da Pergunta inválido</p>`
-        document.getElementById("titulopergunta").style.border = "solid 1px red"
+        document.getElementById("titulo").style.border = "solid 1px red"
         document.getElementById("iconerrotitulopergunta").style.display = "block"
     }
     if (pergunta == ""){
@@ -112,9 +113,10 @@ function verificarpergunta(){
         document.getElementById("pergunta").style.border = "solid 1px red"
         document.getElementById("iconerropergunta").style.display = "block"
     }
-    if (nomealuno.length >= 3 && nomemodulo != "" && pergunta != "")
-    alert("Pergunta feita com sucesso! Você Recebeu 5 pontos")
-    window.location.href = "../usuariologado/aluno/forum.html" 
+    if (nomealuno.length >= 3 && titulopergunta != "" && pergunta != ""){
+        alert("Pergunta feita com sucesso! Você Recebeu 5 pontos")
+        window.location.href = "forum.html"
+    }
 }
 function verificarresposta(){
     var nomealuno = document.getElementById("nomealuno").value.trim();
@@ -132,7 +134,7 @@ function verificarresposta(){
     }
     if (nomealuno.length >= 3 && resposta != "")
     alert("Resposta enviada com sucesso! Você Recebeu 15 pontos")
-    window.location.href = "../usuariologado/aluno/forum.html" 
+    window.location.href = "forum.html"
 }
 function verificarrespostaprof(){
     var nomeprofessor = document.getElementById("nomeprofessor").value.trim();
@@ -150,5 +152,5 @@ function verificarrespostaprof(){
     }
     if (nomeprofessor.length >= 3 && resposta != "")
     alert("Resposta enviada com sucesso!")
-    window.location.href = "../usuariologado/aluno/forum.html" 
+    window.location.href ="forumprof.html"
 }
