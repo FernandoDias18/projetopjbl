@@ -373,6 +373,16 @@ div > span > img {
     }
 }
 
+@media(max-width: 400px){
+    main{
+        height: 350px;
+        border-radius: 15px;
+    }
+    .verde{
+        margin-right: 60px;
+    }
+}
+
 
 
 
