@@ -259,6 +259,12 @@ h2{
 .botaosair > a{
     color: black;
 }
+.editar{
+    cursor: pointer;
+}
+.editar:hover{
+    cursor: pointer;
+}
 @media(max-width: 940px) {
     .menu {
         position: absolute;
