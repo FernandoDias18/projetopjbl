@@ -12,7 +12,7 @@
 
     --fontetitulo: 'Roboto', sans-serif;
     --fonte02: 'Titillium Web', sans-serif;
-    --fonttext: 'Crimson', serif;
+    --fonttext: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
 * {
@@ -195,6 +195,10 @@ footer {
 }
 h2{
     text-align: center;
+    font-family: var(--fontetitulo);
+}
+p {
+    font-family: var(--fonttext);
 }
 
 .card:hover {
