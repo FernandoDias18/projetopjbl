@@ -49,7 +49,7 @@ function validarpagamentoaluno(){
         document.getElementById("valordoacao").style.border = "solid 1px red"
         document.getElementById("iconerrovalordacao").style.display = "block"
     }
-    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length > 12 &&
+    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length == 12 &&
         validade.length == 7 && cvc.length == 3 && valordoacao != ""){
         alert("DOAÇÃO REALIZADA COM SUCESSO")
         window.location.href = "../usuariologado/aluno/paginadoacoes.html";
@@ -165,7 +165,7 @@ function validarpagamento(){
         document.getElementById("valordoacao").style.border = "solid 1px red"
         document.getElementById("iconerrovalordacao").style.display = "block"
     }
-    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length > 12 &&
+    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length == 12 &&
         validade.length == 7 && cvc.length == 3 && valordoacao != ""){
         alert("DOAÇÃO REALIZADA COM SUCESSO")
         window.location.href = "../publicogeral/paginadoacoes.html";
