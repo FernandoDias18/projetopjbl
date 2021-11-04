@@ -36,10 +36,10 @@ a:visited {
     text-decoration: none;
     color: white;
 }
-
 .logo {
     width: 300px;
-    padding-top: 5%;
+    padding-top: 2px;
+    top: 0%;
 }
 
 .header {
