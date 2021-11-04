@@ -14,7 +14,7 @@ function validarpagamentoaluno(){
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
     }
-    if (cpf < 11){
+    if (cpf.length != 11){
         document.getElementById('errocpf').innerHTML = `<p>ERRO! CPF inválido</p>`
         document.getElementById("cpf").style.border = "solid 1px red"
         document.getElementById("iconerrocpf").style.display = "block"
@@ -24,35 +24,35 @@ function validarpagamentoaluno(){
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
-    if (nomecartao.length < 3 || nomecartao == ""){
+    if (nomecartao.length < 3){
         document.getElementById('erronomecartao').innerHTML = `<p>ERRO! Nome do Cartão inválido</p>`
         document.getElementById("nomecartao").style.border = "solid 1px red"
         document.getElementById("iconerronomecartao").style.display = "block"
     }
     if (numerocartao.length != 12){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('erronumerocartao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
         document.getElementById("numerocartao").style.border = "solid 1px red"
         document.getElementById("iconerronumerocartao").style.display = "block"
     }
     if (validade.length != 7){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
-        document.getElementById("numerocartao").style.border = "solid 1px red"
+        document.getElementById('errovalidade').innerHTML = `<p>ERRO! Validade inválida</p>`
+        document.getElementById("validade").style.border = "solid 1px red"
         document.getElementById("iconerrovalidade").style.display = "block"
     }
     if (cvc.length != 3){
-        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do CVC inválido</p>`
         document.getElementById("cvc").style.border = "solid 1px red"
         document.getElementById("iconerrocvc").style.display = "block"
     }
     if (valordoacao == ""){
-        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Valor da doação inválido</p>`
         document.getElementById("valordoacao").style.border = "solid 1px red"
         document.getElementById("iconerrovalordacao").style.display = "block"
     }
-    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length == 12 &&
+    if (nome.length >= 3 && cpf.length== 11 && email != "" && nomecartao.length >= 3 && numerocartao.length == 12 &&
         validade.length == 7 && cvc.length == 3 && valordoacao != ""){
         alert("DOAÇÃO REALIZADA COM SUCESSO")
-        window.location.href = "../usuariologado/aluno/paginadoacoes.html";
+        window.location.href = "paginadoacoes.html"
     }
 
 }
@@ -72,7 +72,7 @@ function validarpagamentoempresa(){
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
     }
-    if (cnpj < 14){
+    if (cnpj.length != 14){
         document.getElementById('errocnpj').innerHTML = `<p>ERRO! CPF inválido</p>`
         document.getElementById("cnpj").style.border = "solid 1px red"
         document.getElementById("iconerrocnpj").style.display = "block"
@@ -82,35 +82,35 @@ function validarpagamentoempresa(){
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
-    if (nomecartao.length < 3 || nomecartao == ""){
+    if (nomecartao.length < 3){
         document.getElementById('erronomecartao').innerHTML = `<p>ERRO! Nome do Cartão inválido</p>`
         document.getElementById("nomecartao").style.border = "solid 1px red"
         document.getElementById("iconerronomecartao").style.display = "block"
     }
     if (numerocartao.length != 12){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('erronumerocartao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
         document.getElementById("numerocartao").style.border = "solid 1px red"
         document.getElementById("iconerronumerocartao").style.display = "block"
     }
     if (validade.length != 7){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
-        document.getElementById("numerocartao").style.border = "solid 1px red"
+        document.getElementById('errovalidade').innerHTML = `<p>ERRO! Validade inválida</p>`
+        document.getElementById("validade").style.border = "solid 1px red"
         document.getElementById("iconerrovalidade").style.display = "block"
     }
     if (cvc.length != 3){
-        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do CVC inválido</p>`
         document.getElementById("cvc").style.border = "solid 1px red"
         document.getElementById("iconerrocvc").style.display = "block"
     }
     if (valordoacao == ""){
-        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Valor da doação inválido</p>`
         document.getElementById("valordoacao").style.border = "solid 1px red"
         document.getElementById("iconerrovalordacao").style.display = "block"
     }
-    if (nome.length > 3 && cnpj == 14 && email != "" && nomecartao > 3 && numerocartao.length == 12 &&
+    if (nome.length >= 3 && cnpj.length == 14 && email != "" && nomecartao.length >= 3 && numerocartao.length == 12 &&
         validade.length == 7 && cvc.length == 3 && valordoacao != ""){
         alert("DOAÇÃO REALIZADA COM SUCESSO")
-        window.location.href = "../usuariologado/empresa/paginadoacoes.html";
+        window.location.href = "paginadoacoes.html";
     }
 
 }
@@ -146,29 +146,29 @@ function validarpagamento(){
         document.getElementById("iconerronomecartao").style.display = "block"
     }
     if (numerocartao.length != 12){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('erronumerocartao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
         document.getElementById("numerocartao").style.border = "solid 1px red"
         document.getElementById("iconerronumerocartao").style.display = "block"
     }
     if (validade.length != 7){
-        document.getElementById('erronumerocartão').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
-        document.getElementById("numerocartao").style.border = "solid 1px red"
+        document.getElementById('errovalidade').innerHTML = `<p>ERRO! Validade inválida</p>`
+        document.getElementById("validade").style.border = "solid 1px red"
         document.getElementById("iconerrovalidade").style.display = "block"
     }
     if (cvc.length != 3){
-        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errocvc').innerHTML = `<p>ERRO! Número do CVC inválido</p>`
         document.getElementById("cvc").style.border = "solid 1px red"
         document.getElementById("iconerrocvc").style.display = "block"
     }
     if (valordoacao == ""){
-        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Número do Cartão inválido</p>`
+        document.getElementById('errovalordoacao').innerHTML = `<p>ERRO! Valor da doação inválido</p>`
         document.getElementById("valordoacao").style.border = "solid 1px red"
         document.getElementById("iconerrovalordacao").style.display = "block"
     }
-    if (nome.length > 3 && cpf == 11 && email != "" && nomecartao > 3 && numerocartao.length == 12 &&
+    if (nome.length >= 3 && cpf.length == 11 && email != "" && nomecartao.length >= 3 && numerocartao.length == 12 &&
         validade.length == 7 && cvc.length == 3 && valordoacao != ""){
         alert("DOAÇÃO REALIZADA COM SUCESSO")
-        window.location.href = "../publicogeral/paginadoacoes.html";
+        window.location.href = "paginadoacoes.html";
     }
 
 }

@@ -188,7 +188,7 @@ footer {
     padding: 10px;
 }
 #iconerronome, #iconerrocpf, #iconerroemail,#iconerronomecartao, #iconerronumerocartao, 
-#iconerrocpf, #iconerrovalidade, #iconerrocvc, #iconerrovalordacao{
+#iconerrocpf, #iconerrovalidade, #iconerrocvc, #iconerrovalordacao, #iconerrocnpj{
     display: none;
 }
 .texto{
