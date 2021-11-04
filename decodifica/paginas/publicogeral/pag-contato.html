@@ -46,14 +46,18 @@
                     <div class="coluna" id="coluna2">
                         <h2 id="titulo2">Envie-nos sua mensagem:</h2>
                         <p class="paragrafo-input">Nome:</p>
-                        <input type="text" class="caixa-texto">
+                        <input type="text" class="caixa-texto" id="nome">
+                        <p class="txterro" id="erronome"></p>
                         <p class="paragrafo-input">Email:</p>
-                        <input type="text" class="caixa-texto">
+                        <input type="text" class="caixa-texto" id="email">
+                        <p class="txterro" id="erroemail"></p>
                         <p class="paragrafo-input">Assunto:</p>
-                        <input type="text" class="caixa-texto">
+                        <input type="text" class="caixa-texto" id="assunto">
+                        <p class="txterro" id="erroassunto"></p>
                         <p class="paragrafo-input">Mensagem:</p>
-                        <textarea id="caixa-texto-mensagem"></textarea>
-                        <button class="botao">ENVIAR</button>                
+                        <textarea class="caixa-texto-mensagem" id="mensagem"></textarea>
+                        <p class="txterro" id="erromensagem"></p>
+                        <button class="botao" onclick="validarcontato()">ENVIAR</button>                  
                     </div>
                 </div>
             </div>
@@ -63,5 +67,6 @@
             <p class="copy">COPYRIGHT &copy 2021 - DECODIFICA</p>
         </footer>
         <script src="../../script/menuhamburguer.js"></script>
+        <script src="../../script/scriptpagcontato.js"></script>
     </body>
 </html>

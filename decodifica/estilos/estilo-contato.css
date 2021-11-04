@@ -140,16 +140,23 @@ a:visited {
     font-family: 'Segoe UI'
 }
 
-#caixa-texto-mensagem {
+.caixa-texto-mensagem {
     font-size: 1em;
     margin: 0 1%;
     height: 120px;
     border: 1px solid gray;
     border-radius: 3px;
     padding-left: 5px;
-    font-family: 'Segoe UI'
+    font-family: 'Segoe UI';
+    padding: 10px;
 }
-
+.txterro {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 2em;
+    color: rgb(204, 0, 0);
+    font-family: var(--fonte02);
+}
 #titulo1 {
     margin: 5% 2%;
     font-size: 3em;
