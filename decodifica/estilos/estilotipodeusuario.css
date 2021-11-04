@@ -21,7 +21,7 @@ body {
 }
 .tipodeusuario {
     height: 320px;
-    width: 450px;
+    width: 400px;
     margin: auto;
     margin-top: 150px;
     text-align: center;
@@ -81,4 +81,9 @@ a {
 a:visited {
     text-decoration: none;
     color: black;
+}
+@media(max-width: 420px){
+    .tipodeusuario{
+        width: 350px;
+    }
 }
