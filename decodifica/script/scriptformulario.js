@@ -23,28 +23,68 @@ function validaraluno(){
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
     }
+    else{
+        if (nome.length >= 3){
+            document.getElementById('erronome').innerHTML = `<p></p>`
+            document.getElementById("nome").style.border = "none"
+            document.getElementById("iconerronome").style.display = "none"
+        } 
+    }
     if (sobrenome == ""){
         document.getElementById('errosobrenome').innerHTML = `<p>ERRO! Sobrenome inválido</p>`
         document.getElementById("sobrenome").style.border = "solid 1px red"
         document.getElementById("iconerrosobren").style.display = "block"
+    }
+    else{
+        if (sobrenome != ""){
+            document.getElementById('errosobrenome').innerHTML = `<p></p>`
+            document.getElementById("sobrenome").style.border = "none"
+            document.getElementById("iconerrosobren").style.display = "none"
+        } 
     }
     if (email == ""){
         document.getElementById('erroemail').innerHTML = `<p>ERRO! E-mail inválido</p>`
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
+    else{
+        if (email != ""){
+            document.getElementById('erroemail').innerHTML = `<p></p>`
+            document.getElementById("email").style.border = "none"
+            document.getElementById("iconerroemail").style.display = "none"
+        } 
+    }
     if (senha.length < 5){
         document.getElementById('errosenha').innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
         document.getElementById("iconerrosenha").style.display = "block"
     }
+    else{
+        if (senha.length >= 5){
+            document.getElementById('errosenha').innerHTML = `<p></p>`
+            document.getElementById("senha").style.border = "none"
+            document.getElementById("iconerrosenha").style.display = "none"
+        } 
+    }
     if (termouso.checked == false){
         document.getElementById("errotermouso").innerHTML = `<p>Aceite os termos de uso para continuar</p>`
+    }
+    else{
+        if (termouso.checked == true){
+            document.getElementById("errotermouso").innerHTML  = `<p></p>`
+        } 
     }
    if (confirmarsenha != senha){
         document.getElementById('erroconfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
+    }
+    else{
+        if (confirmarsenha == senha){
+            document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
+            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("iconerroconfsenha").style.display = "none"
+        } 
     }
     if(nome.length > 3 && sobrenome != "" && email != "" && senha.length >= 5 &&
     confirmarsenha == senha && termouso.checked == true) {
@@ -74,28 +114,68 @@ function validarempresa() {
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
     }
-    if (cnpj == "" || cnpj.length != 14){
+    else{
+        if (nome != ""){
+            document.getElementById('erronome').innerHTML = `<p></p>`
+            document.getElementById("nome").style.border = "none"
+            document.getElementById("iconerronome").style.display = "none"
+        } 
+    }
+    if (cnpj.length != 14){
         document.getElementById('errocnpj').innerHTML = `<p>ERRO! CNPJ inválido</p>`
         document.getElementById("cnpj").style.border = "solid 1px red"
         document.getElementById("iconerrocnpj").style.display = "block"
+    }  
+    else{
+        if (cnpj.length == 14){
+            document.getElementById('errocnpj').innerHTML = `<p></p>`
+            document.getElementById("cnpj").style.border = "none"
+            document.getElementById("iconerrocnpj").style.display = "none"
+        } 
     }
     if (email == ""){
         document.getElementById('erroemail').innerHTML = `<p>ERRO! E-mail inválido</p>`
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
-    if (senha == "" || senha.length < 5){
+    else{
+        if (email != ""){
+            document.getElementById('erroemail').innerHTML = `<p></p>`
+            document.getElementById("email").style.border = "none"
+            document.getElementById("iconerroemail").style.display = "none"
+        } 
+    }
+    if (senha.length < 5){
         document.getElementById('errosenha').innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
         document.getElementById("iconerrosenha").style.display = "block"
     }
+    else{
+        if (senha.length >= 5){
+            document.getElementById('errosenha').innerHTML = `<p></p>`
+            document.getElementById("senha").style.border = "none"
+            document.getElementById("iconerrosenha").style.display = "none"
+        } 
+    }
     if (termouso.checked == false){
         document.getElementById("errotermouso").innerHTML = `<p>Aceite os termos de uso para continuar</p>`
     }    
+    else{
+        if (termouso.checked == true){
+            document.getElementById("errotermouso").innerHTML  = `<p></p>`
+        } 
+    }
     if (confirmarsenha != senha){
         document.getElementById('erroconfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsennha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
+    }
+    else{
+        if (confirmarsenha == senha){
+            document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
+            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("iconerroconfsenha").style.display = "none"
+        } 
     }
     if(nome.length > 3 && email != "" &&  cnpj.length == 14 && senha.length >= 5 &&
         confirmarsenha == senha && termouso.checked == true) {
@@ -124,38 +204,85 @@ function validarprofessor() {
     var termouso = document.getElementById("termouso");
     document.getElementById("cadastro-professor").style.height = "1150px"
 
-    if(nome == "" || nome.length < 3){
+    if(nome.length < 3){
         document.getElementById("erronome").innerHTML = `<p>ERRO! Nome inválido</p>`
         document.getElementById("nome").style.border = "solid 1px red"
         document.getElementById("iconerronome").style.display = "block"
+    }
+    else{
+        if (nome.length >= 3){
+            document.getElementById('erronome').innerHTML = `<p></p>`
+            document.getElementById("nome").style.border = "none"
+            document.getElementById("iconerronome").style.display = "none"
+        } 
     }
     if (sobrenome == ""){
         document.getElementById("errosobrenome").innerHTML = `<p>ERRO! Sobrenome inválido</p>`
         document.getElementById("sobrenome").style.border = "solid 1px red"
         document.getElementById("iconerrosobren").style.display = "block"
     }
+    else{
+        if (sobrenome != ""){
+            document.getElementById('errosobrenome').innerHTML = `<p></p>`
+            document.getElementById("sobrenome").style.border = "none"
+            document.getElementById("iconerrosobren").style.display = "none"
+        } 
+    }
     if (email == ""){
         document.getElementById("erroemail").innerHTML = `<p>ERRO! E-mail inválido</p>`
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
+    }
+    else{
+        if (email != ""){
+            document.getElementById('erroemail').innerHTML = `<p></p>`
+            document.getElementById("email").style.border = "none"
+            document.getElementById("iconerroemail").style.display = "none"
+        } 
     }
     if (curso == "") {
         document.getElementById("errocursograduacao").innerHTML = `<p>ERRO! Curso inválido</p>`
         document.getElementById("cursograduacao").style.border = "solid 1px red"
         document.getElementById("iconerrograduacao").style.display = "block"
     }
-    if (senha == "" || senha.length < 5){
+    else{
+        if (curso != ""){
+            document.getElementById('errocursograduacao').innerHTML = `<p></p>`
+            document.getElementById("cursograduacao").style.border = "none"
+            document.getElementById("iconerrograduacao").style.display = "none"
+        } 
+    }
+    if (senha.length < 5){
         document.getElementById("errosenha").innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
         document.getElementById("iconerrosenha").style.display = "block"
     }
+    else{
+        if (senha.length >= 5){
+            document.getElementById('errosenha').innerHTML = `<p></p>`
+            document.getElementById("senha").style.border = "none"
+            document.getElementById("iconerrosenha").style.display = "none"
+        } 
+    }
     if (termouso.checked == false){
         document.getElementById("errotermouso").innerHTML =`<p>Aceite os termos de uso para continuar</p>`
+    }
+    else{
+        if (termouso.checked == true){
+            document.getElementById("errotermouso").innerHTML  = `<p></p>`
+        } 
     }
     if (confirmarsenha != senha){
         document.getElementById("erroconfirmarsenha").innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
+    }
+    else{
+        if (confirmarsenha == senha){
+            document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
+            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("iconerroconfsenha").style.display = "none"
+        } 
     }
     if (nome.length > 3 && sobrenome != "" && email != "" && curso != "" && senha.length >= 5 &&
         confirmarsenha == senha && termouso.checked == true){
@@ -182,10 +309,24 @@ function validarlogin() {
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
-    if (senha == ""){
+    else{
+        if (email != ""){
+            document.getElementById('erroemail').innerHTML = `<p></p>`
+            document.getElementById("email").style.border = "none"
+            document.getElementById("iconerroemail").style.display = "none"
+        } 
+    }
+    if (senha.length < 5){
         document.getElementById("errosenha").innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
         document.getElementById("iconerrosenha").style.display = "block"
+    }
+    else{
+        if (senha.length >= 5){
+            document.getElementById('errosenha').innerHTML = `<p></p>`
+            document.getElementById("senha").style.border = "none"
+            document.getElementById("iconerrosenha").style.display = "none"
+        } 
     }
     if (email != "" && senha != ""){
         var usuario = [];
@@ -254,15 +395,36 @@ function validarsenhanova(){
         document.getElementById("email").style.border = "solid 1px red"
         document.getElementById("iconerroemail").style.display = "block"
     }
+    else{
+        if (email != ""){
+            document.getElementById('erroemail').innerHTML = `<p></p>`
+            document.getElementById("email").style.border = "none"
+            document.getElementById("iconerroemail").style.display = "none"
+        } 
+    }
     if (senha == "" || senha.length < 5){
         document.getElementById("errosenha").innerHTML = `<p>ERRO! Senha inválida</p>`
         document.getElementById("senha").style.border = "solid 1px red"
         document.getElementById("iconerrosenha").style.display = "block"
     }
+    else{
+        if (senha.length >= 5){
+            document.getElementById('errosenha').innerHTML = `<p></p>`
+            document.getElementById("senha").style.border = "none"
+            document.getElementById("iconerrosenha").style.display = "none"
+        } 
+    }
     if (confirmarsenha != senha){
         document.getElementById("erroconfirmarsenha").innerHTML = `<p>ERRO! Senhas diferentes</p>`
         document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
+    }
+    else{
+        if (confirmarsenha == senha){
+            document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
+            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("iconerroconfsenha").style.display = "none"
+        } 
     }
     if (email != "" && senha.length >= 5 && confirmarsenha == senha ){
         alert("SENHA ALTERADA COM SUCESSO")
