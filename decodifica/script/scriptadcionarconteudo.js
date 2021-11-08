@@ -138,13 +138,13 @@ function verificarvaga(){
         }
     }
     if (horario == ""){
-        document.getElementById('errohoraiovaga').innerHTML = `<p>ERRO! Horário inválido</p>`
+        document.getElementById('errohorariovaga').innerHTML = `<p>ERRO! Horário inválido</p>`
         document.getElementById("horariovaga").style.border = "solid 1px red"
         document.getElementById("iconerrohorariovaga").style.display = "block"
     }
     else{
         if (horario != ""){
-            document.getElementById('errohoraiovaga').innerHTML = `<p></p>`
+            document.getElementById('errohorariovaga').innerHTML = `<p></p>`
             document.getElementById("horariovaga").style.border = "none"
             document.getElementById("iconerrohorariovaga").style.display = "none"
         }

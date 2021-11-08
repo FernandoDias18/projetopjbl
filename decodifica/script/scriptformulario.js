@@ -173,7 +173,7 @@ function validarempresa() {
     else{
         if (confirmarsenha == senha){
             document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
-            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("confirmarsenha").style.border = "none"
             document.getElementById("iconerroconfsenha").style.display = "none"
         } 
     }
@@ -190,7 +190,7 @@ function validarempresa() {
 
         localStorage.setItem('usuarios', JSON.stringify(empresa))
         alert("CADASTRO REALIZADO COM SUCESSO")
-        window.location.href = "../publicogeral/login.html";
+        window.location.href = "login.html";
     }
     
 }
