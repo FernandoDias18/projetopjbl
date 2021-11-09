@@ -179,3 +179,42 @@ textarea{
     display: none;
 }
 
+@media (max-width: 940px) {
+    .menu {
+        position: absolute;
+        width: 60%;
+        top: 70px;
+        right: 0px;
+        background-image: linear-gradient(-90deg,var(--cor01),#0a8ad9);
+        z-index: 10000;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        align-items: center;
+        flex-direction: column;
+    }
+    #nav.active #linha {
+        display: none;
+    }
+    #nav.active .menu {
+        height: 187%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .menu > li {
+        margin-top: 60px;
+    }
+
+    #btn-mobile {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburguer {
+        display: block;
+    }
+}
