@@ -1,5 +1,5 @@
 <h1 align="center"> DECODIFICA </h1>
-<p align="justify"> Projeto interdisciplinar desenvovildo durante o 2° perído de engenharia de software, entre as disciplinas de Engenharia de Requisitos, 
+<p align="justify"> Projeto interdisciplinar desenvovido durante o 2° perído de engenharia de software, entre as disciplinas de Engenharia de Requisitos, 
 Programação Web e IHC. Este projeto tem por objetivo o desencolvimento de um site web dentro do tema escolhido pelo grupo. </p>
 
 <p align="justify"> O nosso projeto tem como tema a educação, o nosso site tem o nome de Decodifica, sendo uma plataforma de ensino a programação de forma 
