@@ -76,13 +76,13 @@ function validaraluno(){
     }
    if (confirmarsenha != senha){
         document.getElementById('erroconfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
-        document.getElementById("confirmarsennha").style.border = "solid 1px red"
+        document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
     else{
         if (confirmarsenha == senha){
             document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
-            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("confirmarsenha").style.border = "none"
             document.getElementById("iconerroconfsenha").style.display = "none"
         } 
     }
@@ -167,7 +167,7 @@ function validarempresa() {
     }
     if (confirmarsenha != senha){
         document.getElementById('erroconfirmarsenha').innerHTML = `<p>ERRO! Senhas diferentes</p>`
-        document.getElementById("confirmarsennha").style.border = "solid 1px red"
+        document.getElementById("confirmarsenha").style.border = "solid 1px red"
         document.getElementById("iconerroconfsenha").style.display = "block"
     }
     else{
@@ -194,7 +194,7 @@ function validarempresa() {
     }
     
 }
-function validarprofessor() {
+function professor() {
     var nome = document.getElementById("nome").value.trim();
     var sobrenome = document.getElementById("sobrenome").value.trim();
     var email = document.getElementById("email").value.trim();
@@ -280,21 +280,24 @@ function validarprofessor() {
     else{
         if (confirmarsenha == senha){
             document.getElementById('erroconfirmarsenha').innerHTML = `<p></p>`
-            document.getElementById("confirmarsennha").style.border = "none"
+            document.getElementById("confirmarsenha").style.border = "none"
             document.getElementById("iconerroconfsenha").style.display = "none"
         } 
     }
-    if (nome.length > 3 && sobrenome != "" && email != "" && curso != "" && senha.length >= 5 &&
+    if (nome.length >= 3 && sobrenome != "" && email != "" && curso != "" &&
         confirmarsenha == senha && termouso.checked == true){
-        var professor = JSON.parse(localStorage.getItem("usuarios") || "[]");
-        professor.push({
+
+         var professor = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        
+         professor.push({
             nomeprofessor: nome,
             sobrenoprofessor: sobrenome,
             emailprofessor: email,
             cursoprofessor: curso,
             senhaprofessor: senha
         })
-        localStorage.setItem('usuarios', JSON.stringify(professor))
+
+        localStorage.setItem("usuarios", JSON.stringify(professor))
         alert("CADASTRO REALIZADO COM SUCESSO")
         window.location.href = "login.html";
     }
