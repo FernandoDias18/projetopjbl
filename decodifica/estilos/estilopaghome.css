@@ -381,6 +381,18 @@ div > span > img {
     .verde{
         margin-right: 60px;
     }
+    #btn-mobile{
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .botaocard{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    
 }
 
 

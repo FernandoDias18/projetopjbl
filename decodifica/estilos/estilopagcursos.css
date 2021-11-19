@@ -276,3 +276,12 @@ h2{
         display: block;
     }
 }
+@media(max-width: 400px){
+    #btn-mobile{
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+}
