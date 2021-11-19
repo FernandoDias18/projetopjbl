@@ -268,5 +268,12 @@ footer {
     }
     .logo{
         margin-left: 0px;
+        width: 200px;
+   }
+
+}
+@media (max-width: 310px){
+    .logo{
+        width: 130px;
     }
 }

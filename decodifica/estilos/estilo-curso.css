@@ -304,7 +304,14 @@ footer {
         margin: 0px;
         padding: 0px;
     }
-    .logo{
+   .logo{
         margin-left: 0px;
+        width: 200px;
+   }
+
+}
+@media (max-width: 310px){
+    .logo{
+        width: 130px;
     }
 }

@@ -330,3 +330,19 @@ p {
         margin-bottom: 100px;
     }
 }
+@media(max-width: 400px){
+    #btn-mobile{
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+        width: 200px;
+   }
+
+}
+@media (max-width: 310px){
+    .logo{
+        width: 130px;
+    }
+}
