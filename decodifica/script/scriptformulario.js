@@ -344,28 +344,37 @@ function validarlogin() {
         var alunoemail = "";
         var empresaemail = ""
         var professoremail = ""
-        usuario.forEach((item) => {
-        if(email == item.emailaluno && senha == item.senhaaluno){
-            validar = {
-                email: item.emailaluno,
-                senha: item.senhaaluno
+        try{
+            usuario.forEach((item) => {
+            if(email == item.emailaluno && senha == item.senhaaluno){
+                validar = {
+                    email: item.emailaluno,
+                    senha: item.senhaaluno
+                }
+                alunoemail = item.emailaluno
+                
+            }else if(email == item.emailempresa && senha == item.senhaempresa){
+                validar = {
+                    email: item.emailempresa,
+                    senha: item.senhaempresa
+                }
+                empresaemail = item.emailempresa
+            }else if(email == item.emailprofessor && senha == item.senhaprofessor){
+                validar = {
+                    email: item.emailprofessor,
+                    senha: item.senhaprofessor
+                }
+                professoremail = item.emailprofessor
             }
-            alunoemail = item.emailaluno
-            
-        }else if(email == item.emailempresa && senha == item.senhaempresa){
-            validar = {
-                email: item.emailempresa,
-                senha: item.senhaempresa
-            }
-            empresaemail = item.emailempresa
-        }else if(email == item.emailprofessor && senha == item.senhaprofessor){
-            validar = {
-                email: item.emailprofessor,
-                senha: item.senhaprofessor
-            }
-            professoremail = item.emailprofessor
+            })
+        } catch (e){
+            document.getElementById("email").style.border = "solid 1px red"
+            document.getElementById("iconerroemail").style.display = "block"
+            document.getElementById("errosenha").innerHTML = `<p>ERRO! Usuário inexistente</p>`
+            document.getElementById("senha").style.border = "solid 1px red"
+            document.getElementById("iconerrosenha").style.display = "block"
+
         }
-        })
             
         if(email == validar.email && senha == validar.senha){
             if(validar.email == empresaemail){
