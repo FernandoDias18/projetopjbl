@@ -99,6 +99,11 @@ div{
     border-radius: 100%;
     margin-right: 20px;
 }
+.logo{
+    width: 300px;
+    padding-top: 5%;
+    height: 126px;
+}
 .informacoes{
     margin-top: 10px;
     line-height: 35px;
@@ -249,7 +254,7 @@ p {
     display: flex;
 }
 .botaosair{
-    background-color: var(--cor05);
+    background-color: #CB0101;
     color: black;
     border: none;
     border-radius: 30px;
@@ -259,10 +264,12 @@ p {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
     font-family: 'Roboto', sans-serif;
     margin-left: 40%;
+    cursor: pointer;
 }
-.botaosair > a{
-    color: black;
+.botaosair:hover{
+    background-color: #962323;
 }
+
 .editar{
     cursor: pointer;
 }
@@ -320,6 +327,7 @@ p {
     }
     .imagem{
         margin: 0px;
+        margin-left: 10px;
     }
     .informacoes{
         padding: 10px;
